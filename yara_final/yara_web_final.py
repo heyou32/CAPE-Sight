@@ -605,7 +605,7 @@ def start_scan():
     if scanner.scan_status['running']:
         return jsonify({'status': 'already_running'})
     
-    folder_path = r"C:\Users\popo7\Desktop\yara_final\cape_reportscle"
+    folder_path = r"C:\Users\popo7\Desktop\yara_final\cape_reports"
     
     thread = Thread(target=scanner.scan_folder_async, args=(folder_path,))
     thread.daemon = True
