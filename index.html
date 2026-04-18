@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if report.top_detections %}
+<div class="card bg-dark text-white mb-4 shadow-sm border-secondary">
+    <div class="card-header border-secondary bg-transparent">
+        <h5 class="mb-0"><i class="fas fa-bug me-2 text-danger"></i> Top Detections</h5>
+    </div>
+    <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+            {% for block in report.top_detections %}
+            <a href="/analysis/search/detections:{{block.family}}"
+                class="btn btn-outline-secondary m-2 d-flex align-items-center text-light" style="border-color: #444;">
+                <span class="badge bg-danger me-2 p-2">{{block.total}}</span>
+                <span class="font-weight-bold" style="font-size: 1rem;"> {{block.family}}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="row mt-4 mb-4">
+    <div class="col-12">
+        <div class="alert alert-primary shadow-sm d-flex align-items-center justify-content-center" style="border: none; color: white;">
+            <i class="fas fa-stopwatch me-3" style="font-size: 1.5rem;"></i>
+            <div class="text-center" style="font-size: 1.1rem;">
+                Estimating ~<b>{{report.estimate_hour}}</b> analysis per hour, <b>{{report.estimate_day}}</b> per day.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-6 mb-3">
+        <div class="card bg-dark text-white shadow-sm border-secondary h-100">
+            <div class="card-header border-secondary bg-transparent text-center">
+                <h5 class="mb-0"><i class="fas fa-server me-2 text-info"></i> Server Usage</h5>
+            </div>
+            <div class="card-body p-4">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>CPU Load</span>
+                        <strong id="server-cpu-percent">-</strong>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                        <div id="server-cpu-bar" class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Memory Usage</span>
+                        <strong id="server-ram-percent">-</strong>
+                    </div>
+                    <div class="progress" style="height: 12px;">
+                        <div id="server-ram-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-white-50">Used <span id="server-ram-used">-</span> / <span id="server-ram-total">-</span></small>
+                </div>
+                <div>
+                    <span class="text-white-50">Load average: </span><strong id="server-load-average">-</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card bg-dark text-white shadow-sm border-secondary h-100">
+            <div class="card-header border-secondary bg-transparent text-center">
+                <h5 class="mb-0"><i class="fas fa-desktop me-2 text-info"></i> VM Usage</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover table-striped mb-0">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="text-start ps-4">Machine</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">CPU</th>
+                            <th class="text-center">Memory</th>
+                        </tr>
+                        </thead>
+                        <tbody id="vm-usage-table-body">
+                        <tr>
+                            <td colspan="4" class="text-center text-white-50 py-4">Loading VM usage...</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-6 mx-auto">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card text-white bg-dark h-100 shadow-sm border-secondary">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center p-4">
+                        <h2 class="font-weight-bold text-primary mb-0">{{report.total_tasks}}</h2>
+                        <small class="text-white-50 text-uppercase letter-spacing-1">Tasks</small>
+                        <i class="fas fa-tasks fa-lg text-white-50 mt-2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card text-white bg-dark h-100 shadow-sm border-secondary">
+                    <div class="card-body text-center d-flex flex-column justify-content-center align-items-center p-4">
+                        <h2 class="font-weight-bold text-success mb-0">{{report.total_samples}}</h2>
+                        <small class="text-white-50 text-uppercase letter-spacing-1">Samples</small>
+                        <i class="fas fa-vial fa-lg text-white-50 mt-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card bg-dark text-white shadow-sm border-secondary mb-5">
+            <div class="card-header border-secondary bg-transparent text-center">
+                <h5 class="mb-0"><i class="fas fa-chart-bar me-2 text-info"></i> Analysis States</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover table-striped mb-0">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th class="text-uppercase border-top-0 text-end pe-4" width="50%">Count</th>
+                            <th class="text-uppercase border-top-0 ps-4" width="50%">State</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for state, count in report.states_count.items %}
+                            <tr>
+                                <td class="text-end pe-4 border-secondary font-weight-bold text-primary">{{count}}</td>
+                                <td class="ps-4 border-secondary">{{state|title}}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function formatLoadAverage(loadAvg) {
+        if (!loadAvg || loadAvg.length === 0) {
+            return "-";
+        }
+        return loadAvg.map(function(value) {
+            return value.toFixed(2);
+        }).join(" / ");
+    }
+
+    function updateServerMetrics(data) {
+        if (!data || !data.server) {
+            return;
+        }
+
+        var cpu = data.server.cpu || {};
+        var ram = data.server.ram || {};
+
+        document.getElementById("server-cpu-percent").textContent = cpu.percent || "-";
+        document.getElementById("server-cpu-bar").style.width = cpu.percent ? cpu.percent : "0%";
+        document.getElementById("server-ram-percent").textContent = ram.used_by || "-";
+        document.getElementById("server-ram-bar").style.width = ram.used_by || "0%";
+        document.getElementById("server-ram-used").textContent = ram.used !== undefined ? ram.used + " GB" : "-";
+        document.getElementById("server-ram-total").textContent = ram.total !== undefined ? ram.total + " GB" : "-";
+        document.getElementById("server-load-average").textContent = formatLoadAverage(cpu.load_average);
+    }
+
+    function updateVmMetrics(data) {
+        var tbody = document.getElementById("vm-usage-table-body");
+        tbody.innerHTML = "";
+
+        if (!data || !data.machines || data.machines.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="4" class="text-center text-white-50 py-4">No VM metrics available.</td></tr>';
+            return;
+        }
+
+        data.machines.forEach(function(machine) {
+            var memoryText = "-";
+            if (machine.memory) {
+                memoryText = machine.memory.assigned !== null && machine.memory.total !== null
+                    ? machine.memory.assigned + " GB / " + machine.memory.total + " GB" + (machine.memory.percent ? " (" + machine.memory.percent + ")" : "")
+                    : "-";
+            }
+
+            var cpuText = machine.cpu_percent || "-";
+            if (!cpuText && machine.status !== "running") {
+                cpuText = "N/A";
+            }
+
+            tbody.insertAdjacentHTML(
+                "beforeend",
+                "<tr>" +
+                    "<td class='ps-4'>" + machine.label + "</td>" +
+                    "<td class='text-center'>" + (machine.status || "unknown") + "</td>" +
+                    "<td class='text-center'>" + cpuText + "</td>" +
+                    "<td class='text-center'>" + memoryText + "</td>" +
+                "</tr>"
+            );
+        });
+    }
+
+    async function refreshCuckooStatus() {
+        try {
+            var response = await fetch("/apiv2/cuckoo/status/");
+            if (!response.ok) {
+                throw new Error("Failed to load status");
+            }
+
+            var json = await response.json();
+            if (json.error) {
+                throw new Error(json.error_value || "Unknown error");
+            }
+
+            updateServerMetrics(json.data);
+            updateVmMetrics(json.data);
+        } catch (error) {
+            console.warn("Unable to refresh CAPE status:", error);
+        }
+    }
+
+    $(function () {
+        refreshCuckooStatus();
+        setInterval(refreshCuckooStatus, 10000);
+    });
+</script>
+
+{% endblock %}
