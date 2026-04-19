@@ -1,0 +1,79 @@
+타입,IOC,설명,출처파일,분석ID
+파일해시,4bf8b286c404d85990a28b2a4dc2b2aa,악성파일 해시 (MD5),Unknown (ID:21),21
+파일해시,8d84d8d736f134a9fb707489cc8c4c3f05e12380,악성파일 해시 (SHA1),Unknown (ID:21),21
+파일해시,8a731d92636ed814a35cf4c95892a518ddf414f3fe622d1534220a1cd9b3a901,악성파일 해시 (SHA256),Unknown (ID:21),21
+파일해시,471fe07ec3cdb09ca7c05f30e74f032f,악성파일 해시 (MD5),Unknown (ID:23),23
+파일해시,cc35b0b69bf0b067c4cba2ac5aafae4cd2bb23ad,악성파일 해시 (SHA1),Unknown (ID:23),23
+파일해시,0c0cca3ed135a7f0bb95732da8b19e379916cc6d297cc59a96d1278a90992b4d,악성파일 해시 (SHA256),Unknown (ID:23),23
+파일해시,c94b8fc8a8b2294c32dc84f9bafc2d6c,악성파일 해시 (MD5),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,b0faa80ac1487685533e4c584d6c7f4a150040f6,악성파일 해시 (SHA1),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,d95e413e59052c9d9d3d591089da6021c05e7578d7e70faa260e1bc62013f85f,악성파일 해시 (SHA256),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),IMG 01-02-2025 09.25.pdf (ID:27),27
+파일해시,a9fe0b546dc4baaae4e3b71ddd0032d1,악성파일 해시 (MD5),Unknown (ID:22),22
+파일해시,fe0115d8004f2d1677076c10e1fe55082fd48676,악성파일 해시 (SHA1),Unknown (ID:22),22
+파일해시,bdd1b8e27a9ba7696657456d35b905e899e9eeecdc10280937ec45a20fa396ff,악성파일 해시 (SHA256),Unknown (ID:22),22
+파일해시,bbba96edc92174a762a57d3af194f2ed,악성파일 해시 (MD5),Form 843-protected.pdf (ID:30),30
+파일해시,634fe255f172cd364873938a71009c320c021a45,악성파일 해시 (SHA1),Form 843-protected.pdf (ID:30),30
+파일해시,1e98db5874724feb356581e59b512a065046607d645aaf34b379e687f0453a58,악성파일 해시 (SHA256),Form 843-protected.pdf (ID:30),30
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),Form 843-protected.pdf (ID:30),30
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),Form 843-protected.pdf (ID:30),30
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),Form 843-protected.pdf (ID:30),30
+파일해시,7ea501911850a077cf0f9fe6a7518859,악성파일 해시 (MD5),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,e1d689bf92ff338752b8ae5a2e8d75586ad2b67b,악성파일 해시 (SHA1),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,e2a24ab94f865caeacdf2c3ad015f31f23008ac6db8312c2cbfb32e4a5466ea2,악성파일 해시 (SHA256),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,85bb101ec85afbaf6e7cda3c0166de03,악성파일 해시 (MD5),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,b53435293fad85456ff512e93fb1e15c7def9d6e,악성파일 해시 (SHA1),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,6be393d75e133398bd449e42af568c834ffeffac12df44fc3cb3ec32949e1ddd,악성파일 해시 (SHA256),e2a24ab94f865caeacdf.dll (ID:3),3
+파일해시,7f59c9e6705c0ff10089977639515673,악성파일 해시 (MD5),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,53073c6a07c8e07645fc791b9c62ce274003f6fc,악성파일 해시 (SHA1),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,aa9c31a09d58142f32bf306fbfc628d14467a68e05bb55ef5c2fde98b84b0688,악성파일 해시 (SHA256),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,702945851f11873426024b628145ea9f,악성파일 해시 (MD5),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,bd431cf33db6efd1a355b2f327f1083138e273c2,악성파일 해시 (SHA1),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,d4c048531c196aab190d0aaa3a9796ecb390961b7fe190e5d5575131ef076ebd,악성파일 해시 (SHA256),aa9c31a09d58142f32bf.msi (ID:26),26
+파일해시,6475f71200c3eeb18953d76916fa2705,악성파일 해시 (MD5),Approved bonuses.exe (ID:24),24
+파일해시,116cbb6f735fcb30c00856b5dd64c8e56e614cb5,악성파일 해시 (SHA1),Approved bonuses.exe (ID:24),24
+파일해시,5646873f89e3468c306385ef3d65b7daf63aeee4128553c3224c75cb0e6902ca,악성파일 해시 (SHA256),Approved bonuses.exe (ID:24),24
+파일해시,b2af138b2ea013ea965d371dabbc4b80,악성파일 해시 (MD5),Approved bonuses.exe (ID:24),24
+파일해시,5ff97c1f40af423f03dda484d3a371e608fe5b59,악성파일 해시 (SHA1),Approved bonuses.exe (ID:24),24
+파일해시,382eecb29063c59d5c50835d4b59eebd00c89ab991e41ecfe647f5902f38750b,악성파일 해시 (SHA256),Approved bonuses.exe (ID:24),24
+파일해시,0cf2385b58292c8309256f8888419c16,악성파일 해시 (MD5),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,e580c3f12cb3b1b284551f38ffe8a486bcc7284a,악성파일 해시 (SHA1),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,cc9f4f27543747d727e218566874ce268a58bfc046b20df53edd92cdb4cfd5f1,악성파일 해시 (SHA256),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),Form 2848 Paul-protected.pdf (ID:32),32
+파일해시,ef534f50808c1e91e0e1d17823f8c5b1,악성파일 해시 (MD5),Password.txt.lnk (ID:31),31
+파일해시,1d25262637f29232dcc0d0bc25e0f8db868119a3,악성파일 해시 (SHA1),Password.txt.lnk (ID:31),31
+파일해시,af5bc8fc2df1debff6eeeb376cb5bd84ae7a16f22eff147241f520cc9966e51a,악성파일 해시 (SHA256),Password.txt.lnk (ID:31),31
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),Password.txt.lnk (ID:31),31
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),Password.txt.lnk (ID:31),31
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),Password.txt.lnk (ID:31),31
+파일해시,530fa158fd6ade8d0fa457dfabd94048,악성파일 해시 (MD5),39de38944110748fca8c0.js (ID:18),18
+파일해시,01d98c5c39ffa5243325a40df4850d24288c1edc,악성파일 해시 (SHA1),39de38944110748fca8c0.js (ID:18),18
+파일해시,39de38944110748fca8c0c971f7399dfda4c0834f2c7008cbd9e3b5d54936e06,악성파일 해시 (SHA256),39de38944110748fca8c0.js (ID:18),18
+파일해시,9ff4166a91abebd222988c86e443b3b4,악성파일 해시 (MD5),39de38944110748fca8c0.js (ID:18),18
+파일해시,a58ea824990e75bb3e8ffca6450100af77a752bc,악성파일 해시 (SHA1),39de38944110748fca8c0.js (ID:18),18
+파일해시,10cc06c109946b878e72b705f4cd85abbe67846886536d9aeef302aaed4eaf07,악성파일 해시 (SHA256),39de38944110748fca8c0.js (ID:18),18
+파일해시,548b0448c22e29a15a41a1c94bb94b23,악성파일 해시 (MD5),95b312923bddff4d97c6.zip (ID:9),9
+파일해시,464047fca7a3fad3510ba9115daa81b5f1daa00a,악성파일 해시 (SHA1),95b312923bddff4d97c6.zip (ID:9),9
+파일해시,46713fa0caa7ad73ab2558456bdb0af41ed18e5c91d4622e4cbe998da501d45f,악성파일 해시 (SHA256),95b312923bddff4d97c6.zip (ID:9),9
+파일해시,245888def5f01acf2c97f336e8f9a979,악성파일 해시 (MD5),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,f5b32c4b52dadf663617c2cb7688dd4643c4b478,악성파일 해시 (SHA1),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,caf5a5db7e61fbc92ac5854b25078c5d91104a8d2dd0179a3264ead8a305ea7a,악성파일 해시 (SHA256),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,3817a268c52b65ac651be4b69a057fe8,악성파일 해시 (MD5),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,73ef22254add4dbc4dffb91fc0930ef0daca81fe,악성파일 해시 (SHA1),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,a4a048db423b5dec06104952bb9826ba45b787b010059fd16d09d20d5c150168,악성파일 해시 (SHA256),TT COPY 5041122904 AN.js (ID:25),25
+파일해시,a6016b017c9a43f8b36f48f4db8d28c2,악성파일 해시 (MD5),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,e552d6d13dde9a7b1549482453aec51b0ea2f982,악성파일 해시 (SHA1),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,76f0895587a5c6197296fcaab6362f92e433bc07b46b867030a0cb9cd1ee4af8,악성파일 해시 (SHA256),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),2024 1040 Tax Return.pdf (ID:28),28
+파일해시,7750385b5a82758b4f360b08ec8de009,악성파일 해시 (MD5),2024 Wks AGI-protected.pdf (ID:29),29
+파일해시,b5d053542be937a1702682f92b302eea90cfefa7,악성파일 해시 (SHA1),2024 Wks AGI-protected.pdf (ID:29),29
+파일해시,112a45c1b615ec69107cb631029d0cb82c4436f4a68e2316a7c2dcf7641b575e,악성파일 해시 (SHA256),2024 Wks AGI-protected.pdf (ID:29),29
+파일해시,4fe951090bb1ffb9591f03f5f5ad8d07,악성파일 해시 (MD5),2024 Wks AGI-protected.pdf (ID:29),29
+파일해시,ba2119443ee81d3a27fabe82a6e3184961a3b05f,악성파일 해시 (SHA1),2024 Wks AGI-protected.pdf (ID:29),29
+파일해시,15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2,악성파일 해시 (SHA256),2024 Wks AGI-protected.pdf (ID:29),29

@@ -1,0 +1,121 @@
+================================================================================
+🛡️  CAPE 개별 분석 보고서 - Approved bonuses.exe
+================================================================================
+
+🎯 위험도 평가: 100/100점 (매우 높음 🔴)
+==================================================
+
+[📋 파일 정보]
+파일명: Approved bonuses.exe
+크기: 719.2 KB
+파일 타입: PE32 executable (GUI) Intel 80386, for MS Windows
+MD5: 6475f71200c3eeb18953d76916fa2705
+SHA1: 116cbb6f735fcb30c00856b5dd64c8e56e614cb5
+SHA256: 5646873f89e3468c306385ef3d65b7daf63aeee4128553c3224c75cb0e6902ca
+분석 ID: 24
+분석 시작: 2026-04-17 12:11:04
+분석 시간: 298초
+분석 머신: cuckoo1
+
+[📊 IOC 통계]
+악성 도메인: 0개
+C&C IP: 0개
+악성 URL: 0개
+파일 해시: 6개
+PE API: 11개
+행동 지표: 0개
+패킹 도구: 3개
+
+[🧮 위험도 계산 상세]
+📡 네트워크 IOC 점수: 0점
+
+📁 파일 기반 점수: 12점
+   - 파일 해시: 6개 × 2점 = 12점
+
+💻 PE 분석 점수: 104점
+   - PE 파일 기본: 15점
+   - 위험한 API: 80점
+   - 의심 파일명: 4점
+   - PE 구조 위험: 5점
+
+📦 패킹/난독화 점수: 21점
+[💻 PE 파일 분석 상세]
+📝 파일명 분석:
+   - social_engineering_filename: 사회공학적 파일명 패턴: bonus (위험도: 4점)
+
+🔧 발견된 위험한 API 함수들:
+
+   📂 registry_manipulation:
+      - RegSetValueExA (위험도: 7점)
+        DLL: ADVAPI32, 주소: 0x40800c
+      - RegDeleteValueA (위험도: 7점)
+        DLL: ADVAPI32, 주소: 0x408014
+      - RegDeleteKeyA (위험도: 7점)
+        DLL: ADVAPI32, 주소: 0x408018
+      - RegOpenKeyExA (위험도: 7점)
+        DLL: ADVAPI32, 주소: 0x408028
+      - RegCreateKeyExA (위험도: 7점)
+        DLL: ADVAPI32, 주소: 0x40802c
+
+   📂 privilege_escalation:
+      - AdjustTokenPrivileges (위험도: 9점)
+        DLL: ADVAPI32, 주소: 0x40801c
+      - LookupPrivilegeValueA (위험도: 9점)
+        DLL: ADVAPI32, 주소: 0x408020
+      - OpenProcessToken (위험도: 9점)
+        DLL: ADVAPI32, 주소: 0x408024
+
+   📂 file_operations:
+      - SHFileOperationA (위험도: 5점)
+        DLL: SHELL32, 주소: 0x408174
+      - ShellExecuteExA (위험도: 5점)
+        DLL: SHELL32, 주소: 0x408178
+
+   📂 process_manipulation:
+      - CreateProcessA (위험도: 8점)
+        DLL: KERNEL32, 주소: 0x40806c
+
+🏗️ PE 구조 위험 지표:
+   - no_digital_signature: 디지털 서명 없음 (위험도: 5점)
+   - entrypoint: PE 진입점
+
+[🎭 행동 분석]
+특별한 행동 패턴이 감지되지 않았습니다.
+(샌드박스 회피 또는 조건부 실행 가능성)
+
+[📦 패킹/난독화 분석 (3개 도구)]
+🔧 UPX_unpack: UPX 패킹 (일반적 패커)
+   위험도: 6점
+   유형: packing_obfuscation
+
+🔧 de4dot_deobfuscate: .NET 난독화
+   위험도: 7점
+   유형: packing_obfuscation
+
+🔧 eziriz_deobfuscate: 상용 난독화 도구
+   위험도: 8점
+   유형: packing_obfuscation
+
+[📄 파일 해시 (6개)]
+ 1. MD5: 6475f71200c3eeb18953d76916fa2705
+     파일: Approved bonuses.exe (original_sample)
+ 2. SHA1: 116cbb6f735fcb30c00856b5dd64c8e56e614cb5
+     파일: Approved bonuses.exe (original_sample)
+ 3. SHA256: 5646873f89e3468c306385ef3d65b7daf63aeee4128553c3224c75cb0e6902ca
+     파일: Approved bonuses.exe (original_sample)
+ 4. MD5: b2af138b2ea013ea965d371dabbc4b80
+     파일: parent_sample (parent_sample)
+ 5. SHA1: 5ff97c1f40af423f03dda484d3a371e608fe5b59
+     파일: parent_sample (parent_sample)
+ 6. SHA256: 382eecb29063c59d5c50835d4b59eebd00c89ab991e41ecfe647f5902f38750b
+     파일: parent_sample (parent_sample)
+
+[🔧 대응 권고사항]
+1. 🚨 즉시 격리 필요 - 매우 높은 위험도
+2. 경영진 및 보안팀 즉시 보고
+3. 발견된 파일 해시를 백신 블랙리스트에 추가
+4. EDR에서 해당 해시 파일 검색 실행
+5. 위험한 API 사용 패턴 모니터링 강화
+6. 프로세스 인젝션 탐지 룰 업데이트
+7. 패킹/난독화된 파일에 대한 심층 분석 수행
+8. 언패킹 도구를 활용한 추가 분석 권장

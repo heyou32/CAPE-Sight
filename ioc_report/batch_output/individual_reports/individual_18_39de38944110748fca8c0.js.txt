@@ -1,0 +1,82 @@
+================================================================================
+🛡️  CAPE 개별 분석 보고서 - 39de38944110748fca8c0.js
+================================================================================
+
+🎯 위험도 평가: 49/100점 (보통 🟡)
+==================================================
+
+[📋 파일 정보]
+파일명: 39de38944110748fca8c0.js
+크기: 260.6 KB
+파일 타입: ASCII text, with very long lines (65058), with CRLF line terminators
+MD5: 530fa158fd6ade8d0fa457dfabd94048
+SHA1: 01d98c5c39ffa5243325a40df4850d24288c1edc
+SHA256: 39de38944110748fca8c0c971f7399dfda4c0834f2c7008cbd9e3b5d54936e06
+분석 ID: 18
+분석 시작: 2026-04-12 13:31:09
+분석 시간: 291초
+분석 머신: cuckoo1
+
+[📊 IOC 통계]
+악성 도메인: 0개
+C&C IP: 0개
+악성 URL: 0개
+파일 해시: 6개
+PE API: 0개
+행동 지표: 0개
+패킹 도구: 3개
+
+[🧮 위험도 계산 상세]
+📡 네트워크 IOC 점수: 0점
+
+📁 파일 기반 점수: 28점
+   - 파일 해시: 6개 × 2점 = 12점
+   - 의심 패턴: 2개 × 8점 = 16점
+
+📦 패킹/난독화 점수: 21점
+[⚠️ 발견된 의심스러운 패턴 (2개)]
+
+📂 script_pattern:
+   - ActiveXObject [출처: file_content]
+   - WScript.Shell [출처: file_content]
+
+[🎭 행동 분석]
+특별한 행동 패턴이 감지되지 않았습니다.
+(샌드박스 회피 또는 조건부 실행 가능성)
+
+[📦 패킹/난독화 분석 (3개 도구)]
+🔧 UPX_unpack: UPX 패킹 (일반적 패커)
+   위험도: 6점
+   유형: packing_obfuscation
+
+🔧 de4dot_deobfuscate: .NET 난독화
+   위험도: 7점
+   유형: packing_obfuscation
+
+🔧 eziriz_deobfuscate: 상용 난독화 도구
+   위험도: 8점
+   유형: packing_obfuscation
+
+[📄 파일 해시 (6개)]
+ 1. MD5: 530fa158fd6ade8d0fa457dfabd94048
+     파일: 39de38944110748fca8c0.js (original_sample)
+ 2. SHA1: 01d98c5c39ffa5243325a40df4850d24288c1edc
+     파일: 39de38944110748fca8c0.js (original_sample)
+ 3. SHA256: 39de38944110748fca8c0c971f7399dfda4c0834f2c7008cbd9e3b5d54936e06
+     파일: 39de38944110748fca8c0.js (original_sample)
+ 4. MD5: 9ff4166a91abebd222988c86e443b3b4
+     파일: parent_sample (parent_sample)
+ 5. SHA1: a58ea824990e75bb3e8ffca6450100af77a752bc
+     파일: parent_sample (parent_sample)
+ 6. SHA256: 10cc06c109946b878e72b705f4cd85abbe67846886536d9aeef302aaed4eaf07
+     파일: parent_sample (parent_sample)
+
+[🔧 대응 권고사항]
+1. 📊 모니터링 강화 - 보통 위험도
+2. 24시간 내 검토 및 대응
+3. 발견된 파일 해시를 백신 블랙리스트에 추가
+4. EDR에서 해당 해시 파일 검색 실행
+5. 패킹/난독화된 파일에 대한 심층 분석 수행
+6. 언패킹 도구를 활용한 추가 분석 권장
+7. 발견된 의심 패턴에 대한 YARA 룰 생성
+8. 스크립트 실행 모니터링 강화

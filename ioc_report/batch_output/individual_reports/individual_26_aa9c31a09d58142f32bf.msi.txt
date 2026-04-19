@@ -1,0 +1,73 @@
+================================================================================
+🛡️  CAPE 개별 분석 보고서 - aa9c31a09d58142f32bf.msi
+================================================================================
+
+🎯 위험도 평가: 33/100점 (낮음 🟢)
+==================================================
+
+[📋 파일 정보]
+파일명: aa9c31a09d58142f32bf.msi
+크기: 1.2 MB
+파일 타입: Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.2, MSI Installer, Code page: 1252, Title: Installation Database, Subject: 441TTJPvwOta, Author: 441TTJPvwOta, Keywords: Installer, Comments: This installer database contains the logic and data required to install 441TTJPvwOta., Template: Intel;0, Revision Number: {15E1C929-208B-4A9D-BAAD-77449FE743D6}, Create Time/Date: Thu Apr 16 12:17:18 2026, Last Saved Time/Date: Thu Apr 16 12:17:18 2026, Number of Pages: 500, Number of Words: 2, Name of Creating Application: WiX Toolset (6.0.2.0), Security: 2
+MD5: 7f59c9e6705c0ff10089977639515673
+SHA1: 53073c6a07c8e07645fc791b9c62ce274003f6fc
+SHA256: aa9c31a09d58142f32bf306fbfc628d14467a68e05bb55ef5c2fde98b84b0688
+분석 ID: 26
+분석 시작: 2026-04-17 12:20:56
+분석 시간: 297초
+분석 머신: cuckoo1
+
+[📊 IOC 통계]
+악성 도메인: 0개
+C&C IP: 0개
+악성 URL: 0개
+파일 해시: 6개
+PE API: 0개
+행동 지표: 0개
+패킹 도구: 3개
+
+[🧮 위험도 계산 상세]
+📡 네트워크 IOC 점수: 0점
+
+📁 파일 기반 점수: 12점
+   - 파일 해시: 6개 × 2점 = 12점
+
+📦 패킹/난독화 점수: 21점
+[🎭 행동 분석]
+특별한 행동 패턴이 감지되지 않았습니다.
+(샌드박스 회피 또는 조건부 실행 가능성)
+
+[📦 패킹/난독화 분석 (3개 도구)]
+🔧 UPX_unpack: UPX 패킹 (일반적 패커)
+   위험도: 6점
+   유형: packing_obfuscation
+
+🔧 de4dot_deobfuscate: .NET 난독화
+   위험도: 7점
+   유형: packing_obfuscation
+
+🔧 eziriz_deobfuscate: 상용 난독화 도구
+   위험도: 8점
+   유형: packing_obfuscation
+
+[📄 파일 해시 (6개)]
+ 1. MD5: 7f59c9e6705c0ff10089977639515673
+     파일: aa9c31a09d58142f32bf.msi (original_sample)
+ 2. SHA1: 53073c6a07c8e07645fc791b9c62ce274003f6fc
+     파일: aa9c31a09d58142f32bf.msi (original_sample)
+ 3. SHA256: aa9c31a09d58142f32bf306fbfc628d14467a68e05bb55ef5c2fde98b84b0688
+     파일: aa9c31a09d58142f32bf.msi (original_sample)
+ 4. MD5: 702945851f11873426024b628145ea9f
+     파일: parent_sample (parent_sample)
+ 5. SHA1: bd431cf33db6efd1a355b2f327f1083138e273c2
+     파일: parent_sample (parent_sample)
+ 6. SHA256: d4c048531c196aab190d0aaa3a9796ecb390961b7fe190e5d5575131ef076ebd
+     파일: parent_sample (parent_sample)
+
+[🔧 대응 권고사항]
+1. 👀 지속 관찰 - 낮은 위험도
+2. 주간 검토 대상으로 분류
+3. 발견된 파일 해시를 백신 블랙리스트에 추가
+4. EDR에서 해당 해시 파일 검색 실행
+5. 패킹/난독화된 파일에 대한 심층 분석 수행
+6. 언패킹 도구를 활용한 추가 분석 권장

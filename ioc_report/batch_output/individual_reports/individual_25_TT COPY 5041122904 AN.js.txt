@@ -1,0 +1,73 @@
+================================================================================
+🛡️  CAPE 개별 분석 보고서 - TT COPY 5041122904 AN.js
+================================================================================
+
+🎯 위험도 평가: 33/100점 (낮음 🟢)
+==================================================
+
+[📋 파일 정보]
+파일명: TT COPY 5041122904 AN.js
+크기: 290.9 KB
+파일 타입: Unicode text, UTF-16, little-endian text, with very long lines (1265), with CRLF line terminators
+MD5: 245888def5f01acf2c97f336e8f9a979
+SHA1: f5b32c4b52dadf663617c2cb7688dd4643c4b478
+SHA256: caf5a5db7e61fbc92ac5854b25078c5d91104a8d2dd0179a3264ead8a305ea7a
+분석 ID: 25
+분석 시작: 2026-04-17 12:16:02
+분석 시간: 294초
+분석 머신: cuckoo1
+
+[📊 IOC 통계]
+악성 도메인: 0개
+C&C IP: 0개
+악성 URL: 0개
+파일 해시: 6개
+PE API: 0개
+행동 지표: 0개
+패킹 도구: 3개
+
+[🧮 위험도 계산 상세]
+📡 네트워크 IOC 점수: 0점
+
+📁 파일 기반 점수: 12점
+   - 파일 해시: 6개 × 2점 = 12점
+
+📦 패킹/난독화 점수: 21점
+[🎭 행동 분석]
+특별한 행동 패턴이 감지되지 않았습니다.
+(샌드박스 회피 또는 조건부 실행 가능성)
+
+[📦 패킹/난독화 분석 (3개 도구)]
+🔧 UPX_unpack: UPX 패킹 (일반적 패커)
+   위험도: 6점
+   유형: packing_obfuscation
+
+🔧 de4dot_deobfuscate: .NET 난독화
+   위험도: 7점
+   유형: packing_obfuscation
+
+🔧 eziriz_deobfuscate: 상용 난독화 도구
+   위험도: 8점
+   유형: packing_obfuscation
+
+[📄 파일 해시 (6개)]
+ 1. MD5: 245888def5f01acf2c97f336e8f9a979
+     파일: TT COPY 5041122904 AN.js (original_sample)
+ 2. SHA1: f5b32c4b52dadf663617c2cb7688dd4643c4b478
+     파일: TT COPY 5041122904 AN.js (original_sample)
+ 3. SHA256: caf5a5db7e61fbc92ac5854b25078c5d91104a8d2dd0179a3264ead8a305ea7a
+     파일: TT COPY 5041122904 AN.js (original_sample)
+ 4. MD5: 3817a268c52b65ac651be4b69a057fe8
+     파일: parent_sample (parent_sample)
+ 5. SHA1: 73ef22254add4dbc4dffb91fc0930ef0daca81fe
+     파일: parent_sample (parent_sample)
+ 6. SHA256: a4a048db423b5dec06104952bb9826ba45b787b010059fd16d09d20d5c150168
+     파일: parent_sample (parent_sample)
+
+[🔧 대응 권고사항]
+1. 👀 지속 관찰 - 낮은 위험도
+2. 주간 검토 대상으로 분류
+3. 발견된 파일 해시를 백신 블랙리스트에 추가
+4. EDR에서 해당 해시 파일 검색 실행
+5. 패킹/난독화된 파일에 대한 심층 분석 수행
+6. 언패킹 도구를 활용한 추가 분석 권장

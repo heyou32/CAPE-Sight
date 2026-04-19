@@ -1,0 +1,82 @@
+================================================================================
+🛡️  CAPE 개별 분석 보고서 - e2a24ab94f865caeacdf.dll
+================================================================================
+
+🎯 위험도 평가: 53/100점 (보통 🟡)
+==================================================
+
+[📋 파일 정보]
+파일명: e2a24ab94f865caeacdf.dll
+크기: 788.9 KB
+파일 타입: PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+MD5: 7ea501911850a077cf0f9fe6a7518859
+SHA1: e1d689bf92ff338752b8ae5a2e8d75586ad2b67b
+SHA256: e2a24ab94f865caeacdf2c3ad015f31f23008ac6db8312c2cbfb32e4a5466ea2
+분석 ID: 3
+분석 시작: 2026-04-09 06:00:33
+분석 시간: 374초
+분석 머신: cuckoo1
+
+[📊 IOC 통계]
+악성 도메인: 0개
+C&C IP: 0개
+악성 URL: 0개
+파일 해시: 6개
+PE API: 0개
+행동 지표: 0개
+패킹 도구: 3개
+
+[🧮 위험도 계산 상세]
+📡 네트워크 IOC 점수: 0점
+
+📁 파일 기반 점수: 12점
+   - 파일 해시: 6개 × 2점 = 12점
+
+💻 PE 분석 점수: 20점
+   - PE 파일 기본: 15점
+   - PE 구조 위험: 5점
+
+📦 패킹/난독화 점수: 21점
+[💻 PE 파일 분석 상세]
+🏗️ PE 구조 위험 지표:
+   - no_digital_signature: 디지털 서명 없음 (위험도: 5점)
+   - entrypoint: PE 진입점
+
+[🎭 행동 분석]
+특별한 행동 패턴이 감지되지 않았습니다.
+(샌드박스 회피 또는 조건부 실행 가능성)
+
+[📦 패킹/난독화 분석 (3개 도구)]
+🔧 UPX_unpack: UPX 패킹 (일반적 패커)
+   위험도: 6점
+   유형: packing_obfuscation
+
+🔧 de4dot_deobfuscate: .NET 난독화
+   위험도: 7점
+   유형: packing_obfuscation
+
+🔧 eziriz_deobfuscate: 상용 난독화 도구
+   위험도: 8점
+   유형: packing_obfuscation
+
+[📄 파일 해시 (6개)]
+ 1. MD5: 7ea501911850a077cf0f9fe6a7518859
+     파일: e2a24ab94f865caeacdf.dll (original_sample)
+ 2. SHA1: e1d689bf92ff338752b8ae5a2e8d75586ad2b67b
+     파일: e2a24ab94f865caeacdf.dll (original_sample)
+ 3. SHA256: e2a24ab94f865caeacdf2c3ad015f31f23008ac6db8312c2cbfb32e4a5466ea2
+     파일: e2a24ab94f865caeacdf.dll (original_sample)
+ 4. MD5: 85bb101ec85afbaf6e7cda3c0166de03
+     파일: parent_sample (parent_sample)
+ 5. SHA1: b53435293fad85456ff512e93fb1e15c7def9d6e
+     파일: parent_sample (parent_sample)
+ 6. SHA256: 6be393d75e133398bd449e42af568c834ffeffac12df44fc3cb3ec32949e1ddd
+     파일: parent_sample (parent_sample)
+
+[🔧 대응 권고사항]
+1. 📊 모니터링 강화 - 보통 위험도
+2. 24시간 내 검토 및 대응
+3. 발견된 파일 해시를 백신 블랙리스트에 추가
+4. EDR에서 해당 해시 파일 검색 실행
+5. 패킹/난독화된 파일에 대한 심층 분석 수행
+6. 언패킹 도구를 활용한 추가 분석 권장
