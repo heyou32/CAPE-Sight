@@ -10,7 +10,7 @@ CAPE 샌드박스 분석 결과에서 IOC(Indicators of Compromise)를 추출하
 - **보고서 생성**: 분석 결과의 종합적인 리포트 생성
 
 ## 📁 프로젝트 구조
-
+'''
 ioc_report/
 ├── main.py                 # 메인 실행 파일
 ├── cape_analyzer/          # 핵심 분석 모듈
@@ -22,7 +22,7 @@ ioc_report/
 ├── config/                 # 설정 파일
 ├── batch_output/          # 배치 처리 결과
 └── cape_results/          # CAPE 분석 결과 샘플
-
+'''
 python
 코드 실행
 코드 복사
