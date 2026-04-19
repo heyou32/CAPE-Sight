@@ -1,0 +1,96 @@
+{
+  "statistics": {
+    "processing": [
+      {
+        "name": "DecryptPcap",
+        "time": 0.0
+      },
+      {
+        "name": "CAPE",
+        "time": 0.0
+      },
+      {
+        "name": "AnalysisInfo",
+        "time": 0.051
+      },
+      {
+        "name": "BehaviorAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "Debug",
+        "time": 0.001
+      },
+      {
+        "name": "NetworkAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "UrlAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "script_log_processing",
+        "time": 0.0
+      },
+      {
+        "name": "ProcessMemory",
+        "time": 0.0
+      }
+    ],
+    "signatures": [],
+    "reporting": [
+      {
+        "name": "BinGraph",
+        "time": 0.0
+      }
+    ]
+  },
+  "decryptpcap": {},
+  "CAPE": {
+    "payloads": [],
+    "configs": []
+  },
+  "info": {
+    "version": "2.5",
+    "started": "2026-04-12 09:39:25",
+    "ended": "2026-04-12 09:39:25",
+    "duration": 0,
+    "id": 8,
+    "category": "file",
+    "custom": "",
+    "machine": {
+      "id": 8,
+      "status": "init",
+      "name": "cuckoo1",
+      "label": "cuckoo1",
+      "platform": "windows",
+      "manager": "KVM",
+      "started_on": "2026-04-12 09:39:25",
+      "shutdown_on": null
+    },
+    "package": "",
+    "timeout": false,
+    "tlp": null,
+    "parent_sample": null,
+    "options": {},
+    "source_url": null,
+    "route": "none",
+    "user_id": 0,
+    "CAPE_current_commit": "35a362e838e289987267a10c6a0880bf30c5dc99"
+  },
+  "behavior": {
+    "processes": []
+  },
+  "debug": {
+    "log": "",
+    "errors": []
+  },
+  "network": {},
+  "url_analysis": {},
+  "procmemory": [],
+  "signatures": [],
+  "malscore": 0.0,
+  "ttps": [],
+  "malstatus": null
+}

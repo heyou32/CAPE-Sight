@@ -1,0 +1,107 @@
+{
+  "statistics": {
+    "processing": [
+      {
+        "name": "DecryptPcap",
+        "time": 0.0
+      },
+      {
+        "name": "CAPE",
+        "time": 0.0
+      },
+      {
+        "name": "AnalysisInfo",
+        "time": 0.011
+      },
+      {
+        "name": "BehaviorAnalysis",
+        "time": 0.002
+      },
+      {
+        "name": "Debug",
+        "time": 0.001
+      },
+      {
+        "name": "NetworkAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "UrlAnalysis",
+        "time": 0.0
+      },
+      {
+        "name": "script_log_processing",
+        "time": 0.0
+      },
+      {
+        "name": "ProcessMemory",
+        "time": 0.0
+      }
+    ],
+    "signatures": [],
+    "reporting": [
+      {
+        "name": "BinGraph",
+        "time": 0.0
+      }
+    ]
+  },
+  "decryptpcap": {},
+  "CAPE": {
+    "payloads": [],
+    "configs": []
+  },
+  "info": {
+    "version": "2.5",
+    "started": "2026-04-17 06:18:42",
+    "ended": "2026-04-17 06:18:42",
+    "duration": 0,
+    "id": 22,
+    "category": "file",
+    "custom": "",
+    "machine": {
+      "id": 17,
+      "status": "init",
+      "name": "cuckoo1",
+      "label": "cuckoo1",
+      "platform": "windows",
+      "manager": "KVM",
+      "started_on": "2026-04-17 06:18:42",
+      "shutdown_on": null
+    },
+    "package": "",
+    "timeout": false,
+    "tlp": null,
+    "parent_sample": {
+      "id": 17,
+      "file_size": 5031,
+      "file_type": "Zip archive data, at least v5.1 to extract, compression method=AES Encrypted",
+      "md5": "a9fe0b546dc4baaae4e3b71ddd0032d1",
+      "crc32": "89C828C1",
+      "sha1": "fe0115d8004f2d1677076c10e1fe55082fd48676",
+      "sha256": "bdd1b8e27a9ba7696657456d35b905e899e9eeecdc10280937ec45a20fa396ff",
+      "sha512": "e37c10100ae879d0761bf0aec24a82ebcb89c1fbcfe25047167ba66841efbb59ac15fa09c641cc8242b63f6a29c414d9fc020d88a98b52a1b553babc9baa08b6",
+      "ssdeep": null,
+      "source_url": null
+    },
+    "options": {},
+    "source_url": null,
+    "route": "none",
+    "user_id": 0,
+    "CAPE_current_commit": "35a362e838e289987267a10c6a0880bf30c5dc99"
+  },
+  "behavior": {
+    "processes": []
+  },
+  "debug": {
+    "log": "",
+    "errors": []
+  },
+  "network": {},
+  "url_analysis": {},
+  "procmemory": [],
+  "signatures": [],
+  "malscore": 0.0,
+  "ttps": [],
+  "malstatus": null
+}
