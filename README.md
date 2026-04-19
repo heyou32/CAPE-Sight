@@ -23,9 +23,7 @@ ioc_report/
 ├── batch_output/          # 배치 처리 결과
 └── cape_results/          # CAPE 분석 결과 샘플
 ```
-python
-코드 실행
-코드 복사
+
 
 ## 🚀 사용법
 
