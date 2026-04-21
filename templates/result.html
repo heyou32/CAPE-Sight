@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPE-Sight | 상세 분석 결과</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #2b4976; color: white; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; }
+        .panel { background-color: #3b5c8d; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .action-bar { display: flex; gap: 15px; margin-bottom: 25px; }
+        .btn-pill { padding: 12px 28px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold; background-color: #ff9f43; }
+        .btn-teal { background-color: #20c997; }
+
+        /* 📍 조원의 터미널 스타일 UI */
+        .result-block { background-color: #556c92; border-radius: 8px; padding: 18px; margin-bottom: 15px; border-left: 5px solid #ff6b6b; }
+        .rule-title { color: #ffd166; font-weight: bold; font-size: 1.1em; display: block; margin-bottom: 12px; }
+        .info-item { margin: 6px 0; font-size: 0.95em; color: #e2e8f0; }
+        .match-box { background-color: #3d4b66; padding: 15px; border-radius: 5px; margin-top: 15px; }
+        ul { margin: 5px 0; padding-left: 20px; color: #ced6e0; }
+        #loadingMsg { text-align: center; color: #ffd166; padding: 40px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="action-bar">
+                <a href="/" class="btn-pill">🚀 메인으로 돌아가기</a>
+                <a href="/download/{{ task_id }}" class="btn-pill btn-teal">📄 분석 리포트(JSON) 저장</a>
+            </div>
+            <h2 id="loadingMsg">리포트 데이터를 분석 중입니다...</h2>
+        </div>
+        <div id="detailsList"></div>
+    </div>
+
+    <script>
+        async function loadReport() {
+            const res = await fetch(`/report/{{ task_id }}`);
+            const json = await res.json();
+            
+            if (json.result === "success") {
+                document.getElementById('loadingMsg').style.display = 'none';
+                const data = json.data;
+                const analysis = data.custom_analysis;
+                const list = document.getElementById('detailsList');
+                let html = "";
+
+                // YARA
+                analysis.yara.forEach(m => {
+                    html += `
+                        <div class="result-block">
+                            <span class="rule-title">🎯 룰: ${m.rule_name}</span>
+                            <div class="info-item">📁 <b>파일:</b> ${m.file_name}</div>
+                            <div class="info-item">📄 <b>타입:</b> ${m.file_type}</div>
+                            <div class="info-item">🔑 <b>해시:</b> ${m.file_hash}</div>
+                            <div class="match-box">
+                                🔍 <b>매치 내역:</b>
+                                <ul>${m.matched_items.map(i => `<li>${i}</li>`).join('')}</ul>
+                            </div>
+                        </div>`;
+                });
+
+                // IOC 
+                const iocs = analysis.iocs;
+                if (iocs.ips.length || iocs.urls.length || iocs.hashes.length) {
+                    html += `
+                        <div class="result-block" style="border-left-color: #20c997;">
+                            <span class="rule-title" style="color: #20c997;">🔗 추출된 IOC 지표</span>
+                            <div class="match-box" style="background: #2d3d5a;">
+                                ${iocs.ips.length ? `<b>🌐 탐지된 IP:</b> <ul>${iocs.ips.map(i=>`<li>${i}</li>`).join('')}</ul>` : ''}
+                                ${iocs.urls.length ? `<b>🔗 연결된 URL:</b> <ul>${iocs.urls.map(u=>`<li>${u}</li>`).join('')}</ul>` : ''}
+                                ${iocs.hashes.length ? `<b>📦 생성된 파일 해시:</b> <ul>${iocs.hashes.map(h=>`<li>${h}</li>`).join('')}</ul>` : ''}
+                            </div>
+                        </div>`;
+                }
+
+                list.innerHTML = html || '<div class="panel">✅ 위협이 탐지되지 않았습니다.</div>';
+            }
+        }
+        window.onload = loadReport;
+    </script>
+</body>
+</html>

@@ -158,4 +158,4 @@ if __name__== "__main__":
             print('     분석 실패 : '+data.get('error_value', None))
             exit()
         
-        time.sleep(60)
+        time.sleep(20)
